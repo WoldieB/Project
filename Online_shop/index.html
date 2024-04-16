@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <h1>Welcome to our Store!</h1>
+    <ul>
+        {% for product in products %}
+            <li>{{ product.name }} - ${{ product.price }}</li>
+        {% endfor %}
+    </ul>
+    <form action="/add_to_cart" method="POST">
+        Select product:
+        <select name="product_num">
+            {% for i, product in enumerate(products, 1) %}
+                <option value="{{ i }}">{{ product.name }}</option>
+            {% endfor %}
+        </select>
+        Quantity:
+        <input type="number" name="quantity" min="1" required>
+        <button type="submit">Add to Cart</button>
+    </form>
+</body>
+</html>
+
