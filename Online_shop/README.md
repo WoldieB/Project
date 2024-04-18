@@ -25,9 +25,9 @@ To finish shopping, type done (all lowercase) when prompted for the product numb
 The program will calculate the total price of all items in your cart and display it.
 Example Interaction:
 Welcome to our store! Here are the available products:
-1. Apple - $3.50
-2. Banana - $0.75
-3. Orange - $1.80
+1. Apple - 60
+2. T-shert - 600
+3. Bag - 700
 ... (other products)
 
 Enter the number of the product you would like to add to your cart (or 'done' to finish): 2
